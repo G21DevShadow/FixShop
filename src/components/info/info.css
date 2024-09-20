@@ -1,0 +1,38 @@
+@import url("../../styles/colors.css");
+.info {
+  display: grid;
+  gap: 2.5rem;
+  width: 90%;
+  max-width: 1300px;
+  font-size: 0.875rem;
+  color: var(--white);
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info-card {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  max-width: 279px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.info-text {
+  font-size: 0.75rem;
+  text-wrap: pretty;
+}
+.info-text-last {
+  margin-bottom: 12px;
+}

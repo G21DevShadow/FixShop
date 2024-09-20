@@ -1,0 +1,12 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0 0 0 /0.3);
+  z-index: 10;
+}

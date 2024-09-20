@@ -1,0 +1,5 @@
+@import url("../../styles/colors.css");
+.infoSection {
+  min-height: 26.25rem;
+  background-color: var(--second-dark-blue);
+}

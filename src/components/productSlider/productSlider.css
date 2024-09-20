@@ -1,0 +1,24 @@
+@import url("../../styles/colors.css");
+.product-content {
+  width: 100%;
+  height: 520px;
+  max-width: 276px;
+  margin: 0 auto;
+}
+
+.product-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  top: unset !important;
+  bottom: 0;
+  padding-top: 1rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important;
+  color: var(--second-dark-blue);
+}

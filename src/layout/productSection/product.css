@@ -1,0 +1,12 @@
+.products {
+  width: 90%;
+  max-width: 1300px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.products-container {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,59 @@
+/* FaqAccordion.css */
+@import url("../../styles/colors.css");
+
+.faq-container {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.faq-accordion {
+  border-radius: 8px;
+}
+
+.faq-item {
+  color: var(--white);
+  margin-bottom: 10px;
+  background-color: var(--blue-light);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item.active {
+  background-color: var(--blue);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  font-size: 0.9rem;
+  color: var(--second-dark-blue);
+  padding: 0 20px;
+  background-color: #ecf0f1;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 230px;
+  padding: 15px 20px;
+}

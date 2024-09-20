@@ -1,0 +1,21 @@
+@import url("../../styles/colors.css");
+
+.comments {
+  display: grid;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1300px;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.comments-text {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.comments-paragraph {
+  font-size: 0.875rem;
+  color: var(--third-dark-blue);
+}

@@ -1,0 +1,50 @@
+@import url("../../styles/colors.css");
+.advantages {
+  padding: 1.5rem 0;
+  background-color: var(--second-dark-blue);
+}
+
+.advantages-content {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages-list {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 1.6rem;
+}
+
+.advantages-item {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+}
+
+.advantages-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.advantages-subtitle {
+  max-width: 12.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.advantages-text {
+  max-width: 18.75rem;
+  font-size: 0.75rem;
+  text-wrap: pretty;
+}
+
+.advantages-click {
+  color: var(--yellow);
+}
+
+.advantages-firstClick {
+  padding: 0 4px;
+}

@@ -1,0 +1,27 @@
+@import url("../../styles/colors.css");
+.containerNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  padding: 0.8rem;
+  background-color: var(--third-dark-blue);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 40;
+}
+
+.nav-active {
+  transform: translateX(0);
+}

@@ -1,0 +1,41 @@
+@import url("../../styles/colors.css");
+
+.category {
+  display: grid;
+  justify-items: center;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.category-text {
+  max-width: 300px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.category-list {
+  display: grid;
+  gap: 6px;
+  max-width: 300px;
+}
+
+.category-link {
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--blue-light);
+  transition: all 0.4s ease-in-out;
+}
+
+.category-line {
+  width: 45%;
+  height: 3px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.category-link-active {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+.category-link-active ~ .category-line {
+  background-color: var(--yellow);
+}

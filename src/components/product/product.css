@@ -1,0 +1,135 @@
+@import url("../../styles/colors.css");
+
+/*Tarjeta de producto*/
+.productCard {
+  max-width: 97%;
+  min-width: 267.7px;
+  height: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0px 4px -1px rgba(0 0 0 /0.4);
+}
+.productCard-figure {
+  height: 155px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--blue-light);
+}
+
+.productCard-name {
+  font-weight: 600;
+}
+
+/*Contenedor de la información del producto */
+.productCard-content {
+  position: relative;
+  max-width: 90%;
+  height: 213px;
+  margin: 0 auto;
+  margin-top: 12px;
+  overflow: hidden;
+}
+/*Contenedor de texto, precio etc */
+.productCard-info {
+  font-size: 0.75rem;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.productCard-info-isActive {
+  transform: translateX(-100%);
+}
+
+/*contenedor de Icono*/
+.productCard-arrowRight {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto;
+  margin-top: 12px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+.productCard-iconArrow {
+  width: 80%;
+  height: 80%;
+}
+
+/*Texto principal del producto*/
+.productCard-textCharacteristics {
+  font-size: 10px;
+}
+
+/*Lista de información del producto precio, código etc*/
+.productCard-list {
+  display: grid;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.productCard-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Contenedor de características del producto*/
+.productCard-contentCharacteristics {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0.875rem;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.productCard-contentCharacteristics-isActive {
+  transform: translateX(0);
+}
+.productCard-contentCharacteristics-title {
+  font-weight: 600;
+  text-align: left;
+}
+
+.productCard-contentCharacteristics-list {
+  display: grid;
+  gap: 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.productCard-contentCharacteristics-item {
+  display: flex;
+  gap: 4px;
+}
+
+.productCard-contentCharacteristics-item p {
+  font-weight: 600;
+}
+
+.productCard-iconArrow-Characteristics {
+  transform: rotate(-180deg);
+}
+
+/*Contenedor de los botones */
+.productsCard-buttonsContent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+/*Botón de comprar*/
+.productsCard-buttons {
+  width: 113px;
+  font-size: 12px;
+  color: var(--white);
+  padding: 5px 0;
+  background-color: var(--yellow);
+}
+/*Botón de agregar al carrito*/
+.productsCard-buttons:nth-child(2) {
+  color: var(--second-dark-blue);
+  border: 1px solid var(--second-dark-blue);
+  background-color: transparent;
+}
