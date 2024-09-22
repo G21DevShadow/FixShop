@@ -1,8 +1,17 @@
 import "./form.css";
+import { useState } from "react";
 import { useValidateLength } from "../../hooks/all/countWords";
+import { EMOTION_ICONS } from "../../utils/constants";
 
 export function Form() {
   const { text, textExceeded, checkText } = useValidateLength();
+
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleIconClick = (input) => {
+    setSelectedValue(input.target.value);
+    console.log(input.target.value);
+  };
   return (
     <form action="" className="form">
       <span></span>
@@ -14,54 +23,31 @@ export function Form() {
           <input type="text" id="name" className="form-inputName" />
         </div>
         <div className="form-group">
-          <label htmlFor="reaction" className="form-label">
+          <label htmlFor="" className="form-label form-reactionText">
             ¿Cual tu opinion acerca de esta pagina?
           </label>
-          <label htmlFor="">
-            <input
-              type="radio"
-              id=""
-              name="reaction"
-              value={1}
-              className="form-inputRadio"
-            />
-          </label>
-          <label htmlFor="">
-            <input
-              type="radio"
-              id=""
-              name="reaction"
-              value={2}
-              className="form-inputRadio"
-            />
-          </label>
-          <label htmlFor="">
-            <input
-              type="radio"
-              id=""
-              name="reaction"
-              value={3}
-              className="form-inputRadio"
-            />
-          </label>
-          <label htmlFor="">
-            <input
-              type="radio"
-              id=""
-              name="reaction"
-              value={4}
-              className="form-inputRadio"
-            />
-          </label>
-          <label htmlFor="">
-            <input
-              type="radio"
-              id=""
-              name="reaction"
-              value={5}
-              className="form-inputRadio"
-            />
-          </label>
+          <div className="form-reactionGroup">
+            {EMOTION_ICONS.map((icon) => {
+              const { id, value, url, urlYellow, alt } = icon;
+              let isSelected = selectedValue === value;
+              return (
+                <>
+                  <label htmlFor={id} key={value}>
+                    <img src={`${isSelected ? urlYellow : url}`} alt={alt} />
+                    <input
+                      type="radio"
+                      id={id}
+                      name="reaction"
+                      value={value}
+                      className={`form-inputRadio 
+                      `}
+                      onClick={handleIconClick}
+                    />
+                  </label>
+                </>
+              );
+            })}
+          </div>
         </div>
         <div className="form-group">
           <label htmlFor="comment" className="form-label">

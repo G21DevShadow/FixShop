@@ -1,6 +1,6 @@
 import "./comments.css";
 
-export function Comments({ title, children }) {
+export function Comments({ title, form, commentCard }) {
   return (
     <section className="comments">
       <div className="comments-text">
@@ -10,7 +10,10 @@ export function Comments({ title, children }) {
           utilizando FixShop.
         </p>
       </div>
-      <section className="comments-container">{children}</section>
+      <section className="comments-container">
+        {form}
+        {commentCard}
+      </section>
     </section>
   );
 }

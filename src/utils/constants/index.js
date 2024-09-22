@@ -1,5 +1,6 @@
 import { RELATIVE_IMG } from "../../Routes/relativePaths";
 
+//Objeto de las imágenes del slider principal
 export const HERO_IMAGES = [
   {
     url: `${RELATIVE_IMG}images/heroSlider/slide-1.jpg`,
@@ -26,6 +27,7 @@ export const HERO_IMAGES = [
   },
 ];
 
+//Objeto de las imágenes del slider de anuncios
 export const PUBLICITY_IMAGES = [
   {
     url: `${RELATIVE_IMG}images/publicitySlider/publicity-img1.jpg`,
@@ -45,6 +47,7 @@ export const PUBLICITY_IMAGES = [
   },
 ];
 
+//Objeto de las preguntas frecuentes
 export const FAQS = [
   {
     question: "¿Cómo funciona FixShop?",
@@ -87,10 +90,40 @@ export const FAQS = [
     answer:
       "Puedes vender una amplia variedad de productos, desde electrónicos, ropa, accesorios hasta productos del campo. Si quieres mas información no olvides que puedes contactarnos y con gusto te atenderemos.",
   },
-   {
+  {
     question: "¿Hay algún costo por vender en FixShop?",
     answer:
       "Registrarte como vendedor es gratuito. Sin embargo, cobramos una pequeña comisión por cada venta realizada a traves de nuestra plataforma.",
   },
-  
+];
+
+export const EMOTION_ICONS = [
+  {
+    id: "faceSad",
+    value: "sad",
+    url: `${RELATIVE_IMG}icons/faceIcon/FaceSad.svg`,
+    urlYellow: `${RELATIVE_IMG}icons/faceIcon/FaceSad-yellow.svg`,
+    alt: "Icono de una cara con expresión triste",
+  },
+  {
+    id: "faceNeutral",
+    value: "neutral",
+    url: `${RELATIVE_IMG}icons/faceIcon/FaceNeutral.svg`,
+    urlYellow: `${RELATIVE_IMG}icons/faceIcon/FaceNeutral-yellow.svg`,
+    alt: "Icono de una cara con expresión neutral",
+  },
+  {
+    id: "faceHappy",
+    value: "happy",
+    url: `${RELATIVE_IMG}icons/faceIcon/FaceHappy.svg`,
+    urlYellow: `${RELATIVE_IMG}icons/faceIcon/FaceHappy-yellow.svg`,
+    alt: "Icono de una cara con expresión feliz",
+  },
+  {
+    id: "faceDelighted",
+    value: "delighted",
+    url: `${RELATIVE_IMG}icons/faceIcon/FaceDelighted.svg`,
+    urlYellow: `${RELATIVE_IMG}icons/faceIcon/FaceDelighted-yellow.svg`,
+    alt: "Icono de una cara con expresión muy feliz",
+  },
 ];

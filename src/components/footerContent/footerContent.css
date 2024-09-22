@@ -1,0 +1,83 @@
+@import url("../../styles/colors.css");
+.footer-container {
+  display: grid;
+  grid-template-areas:
+    "product corporative"
+    "contact contact";
+  width: 95%;
+  max-width: 1300px;
+  padding-top: 50px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.footer-contactLocation {
+  display: grid;
+  justify-items: center;
+  grid-area: contact;
+  padding-top: 1.3rem;
+}
+
+.footer-product {
+  grid-area: product;
+}
+.footer-corporative {
+  grid-area: corporative;
+}
+
+.footer-list {
+  display: grid;
+  gap: 8px;
+}
+.footer-item {
+  font-size: 0.87rem;
+}
+
+.footer-itemContact {
+  display: flex;
+  gap: 10px;
+}
+.footer-listFloat {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 144px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  width: 90%;
+  max-width: 288px;
+  font-size: 0.87rem;
+  padding: 0 7px;
+  border-radius: 6px;
+  background-color: var(--third-dark-blue);
+}
+
+.footer-listFloat .footer-item:first-child {
+  display: none;
+}
+.footer-logo {
+  display: none;
+}
+.footer-item:first-child {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.footer-icon {
+  width: 20px;
+}
+
+.footer-buttonContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  display: grid;
+  gap: 1rem;
+  font-size: 0.87rem;
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid var(--white);
+}

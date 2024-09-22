@@ -25,6 +25,11 @@ import { FaqAccordion } from "./components/faq";
 //components comments
 import { Comments } from "./layout/comments";
 import { Form } from "./components/form";
+import { CommentSlider } from "./components/commentSlides";
+//components footer
+import { Footer } from "./layout/footer";
+import { FooterContent } from "./components/footerContent";
+
 //componentes
 import { Title } from "./components/title";
 import { useToggle } from "./hooks/all/activate";
@@ -62,9 +67,14 @@ function App() {
         <PublicitySlider />
         <FaqAccordion title={<Title text={"Preguntas frecuentes"} />} />
       </Publicity>
-      <Comments title={<Title text={"Comentarios"} />}>
-        <Form />
-      </Comments>
+      <Comments
+        title={<Title text={"Comentarios"} />}
+        form={<Form />}
+        commentCard={<CommentSlider />}
+      ></Comments>
+      <Footer>
+        <FooterContent />
+      </Footer>
     </>
   );
 }

@@ -1,0 +1,7 @@
+@import url("../../styles/colors.css");
+.footer {
+  position: relative;
+  min-height: 500px;
+  background-color: var(--second-dark-blue);
+  color: var(--white);
+}
