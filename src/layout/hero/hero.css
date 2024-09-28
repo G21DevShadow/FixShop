@@ -10,3 +10,15 @@
   background-color: rgba(0 0 0 /0.3);
   z-index: 10;
 }
+
+@media (min-width: 767px) {
+  .hero {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 1023px) {
+  .hero {
+    height: 100vh;
+  }
+}

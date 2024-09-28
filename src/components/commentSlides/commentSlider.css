@@ -1,11 +1,17 @@
 .comment-slider {
   width: 100%;
   height: 300px;
-  max-width: 276px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 .product-slider {
   width: 100%;
   height: 100%;
+}
+
+@media (min-width: 1023px) {
+  .comment-slider {
+    height: 445px;
+  }
 }

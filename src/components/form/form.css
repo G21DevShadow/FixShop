@@ -1,7 +1,8 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 .form {
   width: 100%;
-  max-width: 300px;
+  max-width: 330px;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px 1px rgba(0 0 0 /0.6);
@@ -21,7 +22,7 @@
   padding: 1rem 0;
 }
 .form-group {
-  font-size: 0.9rem;
+  font-size: var(--font-md);
   text-align: left;
 }
 
@@ -35,9 +36,25 @@
   gap: 1rem;
 }
 
+.form-label {
+  position: relative;
+}
+.form-reaction {
+  position: inherit;
+  width: 58px;
+  z-index: 40;
+  cursor: pointer;
+}
+.form-inputRadio {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+}
 .form-inputName {
   width: 100%;
-  font-size: 0.875rem;
+  font-size: var(--font-md);
   padding: 5px;
   border: 1px solid var(--blue-light);
   border-radius: 5px;
@@ -50,10 +67,11 @@
 .form-area {
   width: 100%;
   height: 120px;
-  font-size: 0.875rem;
+  font-size: var(--font-md);
   padding: 5px;
   border: 1px solid var(--blue-light);
   border-radius: 5px;
+  resize: none;
   outline: none;
 }
 

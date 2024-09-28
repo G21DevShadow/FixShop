@@ -4,8 +4,8 @@ import { RELATIVE_IMG } from "../../Routes/relativePaths";
 export function FooterContent() {
   return (
     <section className="footer-container">
-      <figure>
-        <img src="" alt="" className="footer-logo" />
+      <figure className="footer-figure">
+        <img src={`${RELATIVE_IMG}/images/logo.jpeg`} className="footer-logo" />
       </figure>
       <div className="footer-contactLocation">
         <ul className="footer-list">
@@ -70,8 +70,10 @@ export function FooterContent() {
         </ul>
       </div>
       <div className="footer-buttonContent">
-        <p>FixShop - &copy; Copyright 2024 todos los derechos reservados.</p>
-        <p>Desarrollado por DevShadow</p>
+        <div className="">
+          <p>FixShop - &copy; Copyright 2024 todos los derechos reservados.</p>
+          <p>Desarrollado por DevShadow</p>
+        </div>
       </div>
     </section>
   );

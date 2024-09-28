@@ -21,8 +21,13 @@ export function ProductSlider({ product }) {
         fadeEffect={{ crossFade: true }}
         loop={true}
         direction="horizontal"
+        breakpoints={{
+          1023: {
+            slidesPerView: 2,
+          },
+        }}
       >
-        <SwiperSlide>
+        <SwiperSlide className="product-card">
           <Product
             active={state}
             toggleActive={activate}
@@ -36,7 +41,7 @@ export function ProductSlider({ product }) {
             price={"17.000"}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="product-card">
           <Product
             images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}
@@ -48,7 +53,21 @@ export function ProductSlider({ product }) {
             price={"17.000"}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="product-card">
+          <Product
+            active={state}
+            toggleActive={activate}
+            images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
+            name={"Mouse USB con cable"}
+            description={
+              "Ratón USB con cable para ordenadores y portátiles, ratón ergonómico con clics duraderos"
+            }
+            units={"3"}
+            code={"MU001"}
+            price={"17.000"}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="product-card">
           <Product
             images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}

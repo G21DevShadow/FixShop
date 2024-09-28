@@ -66,14 +66,11 @@ export function Advantages({ title }) {
               alt="Icono de un carro de envíos"
               className="advantages-icon"
             />
-            <h2 className="advantages-subtitle">
-              Impulsa tus ventas desde la comodidad de tu hogar
-            </h2>
+            <h2 className="advantages-subtitle">Impulsa tus ventas</h2>
             <p className="advantages-text">
               Vende tus productos a través de nuestro sitio web y llega a más
-              clientes sin complicaciones. Para más información no dudes en
-              contactarnos. ¡Empieza a vender hoy mismo y haz crecer tu negocio
-              con nosotros!
+              clientes sin complicaciones. ¡Empieza a vender hoy mismo y haz
+              crecer tu negocio con nosotros!
             </p>
           </li>
           <li className="advantages-item">
@@ -83,14 +80,12 @@ export function Advantages({ title }) {
               className="advantages-icon"
             />
             <h2 className="advantages-subtitle">
-              Apoya a emprendedores locales comprando a traves de nuestro sitio
-              web
+              Apoya a emprendedores locales.
             </h2>
             <p className="advantages-text">
-              Cada compra que realizas ayuda a fortalecer la economía de nuestra
-              comunidad, respalda a los vendedores y emprendedores locales. Con
-              tu apoyo, podemos hacer una gran diferencia. Explora nuestra
-              variedad de productos y encuentra lo que necesitas.
+              Cada compra que realizas fortalece la economía, apoya a los
+              vendedores y emprendedores locales. Explora nuestra variedad de
+              productos y encuentra lo que necesitas.
             </p>
           </li>
         </ul>

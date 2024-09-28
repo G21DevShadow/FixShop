@@ -1,4 +1,5 @@
+@import url("../../styles/fonts.css");
 .title {
-  font-size: 1.1rem;
+  font-size: var(--font-lg);
   font-weight: 600;
 }

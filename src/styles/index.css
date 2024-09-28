@@ -126,7 +126,7 @@ q:after {
   color: var(--blanco);
 }
 ::selection {
-  background-color: var(#becde3);
+  background-color: #40587c;
   color: var(--blanco);
 }
 
@@ -145,10 +145,6 @@ label {
   background-color: transparent;
   color: inherit;
   display: block;
-  /* opcional */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* Reseteamos las tablas */
@@ -175,14 +171,4 @@ body {
   background-color: var(--white);
   /* opcional */
   line-height: 1.4em;
-  /* opcional */
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  /* opcional */
-  font-smooth: always;
-  /* opcional */
-  -webkit-font-smoothing: antialiased;
-  /* opcional */
-  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,4 +1,5 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 
 .comments {
   display: grid;
@@ -16,11 +17,26 @@
 }
 
 .comments-paragraph {
-  font-size: 0.875rem;
+  max-width: 21.875rem;
+  font-size: var(--font-md);
   color: var(--third-dark-blue);
+  margin: 0 auto;
 }
 
 .comments-container {
   display: grid;
   gap: 4rem;
+}
+
+@media (min-width: 1023px) {
+  .comments {
+    gap: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+  }
+  .comments-container {
+    grid-template-columns: 350px 400px;
+    justify-content: center;
+    gap: 5rem;
+  }
 }

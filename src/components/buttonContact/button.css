@@ -1,6 +1,7 @@
 @import url("../../styles/colors.css");
 .btnContact {
   width: 130px;
+  max-height: 39px;
   color: var(--white);
   background-color: var(--yellow);
   padding: 8px;

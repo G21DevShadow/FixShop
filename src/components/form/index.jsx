@@ -10,7 +10,6 @@ export function Form() {
 
   const handleIconClick = (input) => {
     setSelectedValue(input.target.value);
-    console.log(input.target.value);
   };
   return (
     <form action="" className="form">
@@ -32,8 +31,12 @@ export function Form() {
               let isSelected = selectedValue === value;
               return (
                 <>
-                  <label htmlFor={id} key={value}>
-                    <img src={`${isSelected ? urlYellow : url}`} alt={alt} />
+                  <label htmlFor={id} key={value} className="form-label">
+                    <img
+                      src={`${isSelected ? urlYellow : url}`}
+                      alt={alt}
+                      className="form-reaction"
+                    />
                     <input
                       type="radio"
                       id={id}
@@ -42,6 +45,7 @@ export function Form() {
                       className={`form-inputRadio 
                       `}
                       onClick={handleIconClick}
+                      required
                     />
                   </label>
                 </>
@@ -58,7 +62,8 @@ export function Form() {
             name=""
             id="comment"
             className="form-area"
-            placeholder="El comentario debe tener un máximo de 50 palabras."
+            placeholder="El comentario debe tener un máximo de 30 palabras."
+            required
           >
             {text && text}
           </textarea>

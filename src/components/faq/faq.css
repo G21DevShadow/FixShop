@@ -1,11 +1,11 @@
 /* FaqAccordion.css */
 @import url("../../styles/colors.css");
-
+@import url("../../styles/fonts.css");
 .faq-container {
   display: grid;
   justify-items: center;
   gap: 2rem;
-  max-width: 800px;
+  max-width: 680px;
   padding: 20px;
   margin: 0 auto;
   border-radius: 8px;
@@ -45,7 +45,7 @@
 
 .faq-answer {
   max-height: 0;
-  font-size: 0.9rem;
+  font-size: var(--font-md);
   color: var(--second-dark-blue);
   padding: 0 20px;
   background-color: #ecf0f1;
@@ -56,4 +56,10 @@
 .faq-item.active .faq-answer {
   max-height: 230px;
   padding: 15px 20px;
+}
+
+@media (min-width: 1023px) {
+  .faq-container {
+    padding-top: 3rem;
+  }
 }

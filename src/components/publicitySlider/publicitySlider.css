@@ -1,6 +1,10 @@
 .publicitySwiper {
   width: 100%;
-  max-width: 560px;
-  height: 250px;
-  margin: 0 auto;
+  height: 260px;
+}
+
+@media (min-width: 767px) {
+  .publicitySwiper {
+    height: 400px;
+  }
 }

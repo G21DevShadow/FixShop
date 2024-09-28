@@ -1,15 +1,16 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 
 .category {
   display: grid;
   justify-items: center;
-  max-width: 370px;
+  max-width: 350px;
   margin: 0 auto;
 }
 .category-text {
   max-width: 300px;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
+  font-size: var(--font-md);
+  padding-bottom: 1rem;
 }
 
 .category-list {
@@ -19,7 +20,7 @@
 }
 
 .category-link {
-  font-size: 0.875rem;
+  font-size: var(--font-md);
   border-bottom: 1px solid var(--blue-light);
   transition: all 0.4s ease-in-out;
 }
@@ -38,4 +39,26 @@
 
 .category-link-active ~ .category-line {
   background-color: var(--yellow);
+}
+
+@media (min-width: 1023px) {
+  .category {
+    align-self: center;
+    max-width: 310px;
+    grid-template-rows: 70px 230px;
+    justify-items: left;
+    margin: 0;
+  }
+  .category-text {
+    text-align: left;
+  }
+
+  .category-list {
+    width: 80%;
+    text-align: left;
+  }
+  .category-line {
+    width: 60%;
+    margin: 0;
+  }
 }

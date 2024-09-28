@@ -1,10 +1,13 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 .welcome {
   display: grid;
   gap: 2rem;
   width: 90%;
   max-width: 1300px;
-  margin: 3rem auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3rem 0;
 }
 
 .welcome-info {
@@ -16,16 +19,49 @@
 .welcome-img {
   width: 100%;
   max-width: 20rem;
+  max-height: 500px;
   margin: 0 auto;
 }
 
 .welcome-title {
-  font-size: 1.4rem;
+  align-self: flex-end;
+  font-size: var(--font-2lg);
   color: var(--first-dark-blue);
 }
 
 .welcome-text {
-  font-size: 0.8125rem;
+  max-width: 420px;
+  white-space: normal;
+  font-size: var(--font-md);
+  line-height: 24px;
   text-wrap: pretty;
+  overflow-wrap: break-word;
   color: var(--blue);
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .welcome-img {
+    max-width: 21rem;
+  }
+  .welcome-text {
+    line-height: 26px;
+  }
+}
+@media (min-width: 1023px) {
+  .welcome {
+    grid-template-columns: repeat(2, minmax(460px, 470px));
+    grid-template-rows: minmax(500px, 520px);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  .welcome-info {
+    align-self: center;
+    grid-template-rows: 30px 300px 50px;
+  }
+  .welcome-img {
+    align-self: center;
+  }
 }

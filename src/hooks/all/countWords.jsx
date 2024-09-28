@@ -10,7 +10,7 @@ export function useValidateLength() {
 
   function checkText(event) {
     const textEntered = event.target.value;
-    const maxWords = 50;
+    const maxWords = 30;
     const words = countWords(textEntered);
 
     if (words <= maxWords) {

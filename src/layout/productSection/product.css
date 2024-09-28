@@ -1,7 +1,8 @@
 .products {
   width: 90%;
   max-width: 1300px;
-  margin: 3rem auto;
+  margin: 0 auto;
+  padding: 4rem 0;
   text-align: center;
 }
 
@@ -9,4 +10,17 @@
   display: grid;
   gap: 3rem;
   margin-top: 2rem;
+}
+
+@media (min-width: 1023px) {
+  .products {
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .products-container {
+    grid-template-columns: 320px 560px;
+    justify-content: center;
+    gap: 2rem;
+  }
 }

@@ -1,4 +1,5 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 .footer-container {
   display: grid;
   grid-template-areas:
@@ -12,8 +13,6 @@
 }
 
 .footer-contactLocation {
-  display: grid;
-  justify-items: center;
   grid-area: contact;
   padding-top: 1.3rem;
 }
@@ -26,11 +25,13 @@
 }
 
 .footer-list {
-  display: grid;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 .footer-item {
-  font-size: 0.87rem;
+  font-size: var(--font-md);
 }
 
 .footer-itemContact {
@@ -47,7 +48,7 @@
   height: 60px;
   width: 90%;
   max-width: 288px;
-  font-size: 0.87rem;
+  font-size: var(--font-md);
   padding: 0 7px;
   border-radius: 6px;
   background-color: var(--third-dark-blue);
@@ -56,9 +57,10 @@
 .footer-listFloat .footer-item:first-child {
   display: none;
 }
-.footer-logo {
+.footer-figure {
   display: none;
 }
+
 .footer-item:first-child {
   font-weight: 600;
   margin-bottom: 6px;
@@ -73,11 +75,70 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px;
+  height: 80px;
+  border-top: 1px solid var(--white);
+}
+.footer-buttonContent div {
+  height: 100%;
+  width: 90%;
+  max-width: 1300px;
   display: grid;
   gap: 1rem;
-  font-size: 0.87rem;
+  font-size: var(--font-md);
   text-align: center;
   padding: 8px;
-  border-top: 1px solid var(--white);
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .footer-container {
+    grid-template-areas: "contact product corporative";
+    width: 75%;
+    margin: 0;
+    margin-left: auto;
+    padding-bottom: 100px;
+  }
+
+  .footer-contactLocation {
+    padding-top: 0;
+  }
+  .footer-listFloat {
+    position: static;
+    align-items: flex-start;
+    gap: 2px;
+    height: max-content;
+    width: unset;
+    padding: 0;
+    padding-top: 1.4rem;
+    background-color: transparent;
+  }
+
+  .footer-listFloat .footer-icon {
+    display: none;
+  }
+  .footer-listFloat .footer-item:first-child {
+    display: block;
+  }
+
+  .footer-figure {
+    position: absolute;
+    left: 4rem;
+    top: calc(40% - 60px);
+    display: block;
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-logo {
+    border-radius: 50%;
+  }
+  .footer-buttonContent {
+    height: 80px;
+  }
+  .footer-buttonContent div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px;
+    align-content: center;
+    align-items: center;
+  }
 }

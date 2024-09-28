@@ -1,10 +1,11 @@
 @import url("../../styles/colors.css");
+@import url("../../styles/fonts.css");
 .info {
   display: grid;
   gap: 2.5rem;
   width: 90%;
   max-width: 1300px;
-  font-size: 0.875rem;
+  font-size: var(--font-md);
   color: var(--white);
   padding: 2rem 0;
   margin: 0 auto;
@@ -30,9 +31,20 @@
 }
 
 .info-text {
-  font-size: 0.75rem;
+  font-size: var(--font-sm);
   text-wrap: pretty;
 }
 .info-text-last {
   margin-bottom: 12px;
+}
+
+@media (min-width: 1023px) {
+  .info {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    align-content: center;
+    height: 416px;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
 }

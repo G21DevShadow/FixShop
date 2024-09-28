@@ -1,6 +1,7 @@
 @import url("../../styles/colors.css");
 .footer {
   position: relative;
+  display: flex;
   min-height: 500px;
   background-color: var(--second-dark-blue);
   color: var(--white);
