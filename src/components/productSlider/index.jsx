@@ -31,7 +31,7 @@ export function ProductSlider({ product }) {
           <Product
             active={state}
             toggleActive={activate}
-            images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
+            images={"./assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}
             description={
               "Ratón USB con cable para ordenadores y portátiles, ratón ergonómico con clics duraderos"
@@ -43,7 +43,7 @@ export function ProductSlider({ product }) {
         </SwiperSlide>
         <SwiperSlide className="product-card">
           <Product
-            images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
+            images={"./assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}
             description={
               "Ratón USB con cable para ordenadores y portátiles, ratón ergonómico con clics duraderos"
@@ -57,7 +57,7 @@ export function ProductSlider({ product }) {
           <Product
             active={state}
             toggleActive={activate}
-            images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
+            images={"./assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}
             description={
               "Ratón USB con cable para ordenadores y portátiles, ratón ergonómico con clics duraderos"
@@ -69,7 +69,7 @@ export function ProductSlider({ product }) {
         </SwiperSlide>
         <SwiperSlide className="product-card">
           <Product
-            images={"./src/assets/images/imgSliderProduct/mouse.jpeg"}
+            images={"./assets/images/imgSliderProduct/mouse.jpeg"}
             name={"Mouse USB con cable"}
             description={
               "Ratón USB con cable para ordenadores y portátiles, ratón ergonómico con clics duraderos"

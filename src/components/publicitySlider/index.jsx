@@ -3,7 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "./publicitySlider.css";
 import "swiper/css/effect-fade";
-import { PUBLICITY_IMAGES } from "../../utils/constants";
+import { PUBLICITY_IMAGES } from "../../utils/constants/images-faqs";
 
 export function PublicitySlider() {
   return (

@@ -1,4 +1,3 @@
-import "./styles/App.css";
 //Components hero
 import { Hero } from "./layout/hero";
 import { MenuIcon } from "./components/menuIcons";
@@ -80,5 +79,7 @@ function App() {
 }
 //mama
 //lectura: https://es.react.dev/learn/reusing-logic-with-custom-hooks
+//@import url("../../styles/width.css");
 //@import url("../../styles/colors.css");
 export default App;
+//https://www.youtube.com/watch?v=TOPkdU9h5es

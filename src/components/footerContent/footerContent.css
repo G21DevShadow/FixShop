@@ -1,12 +1,14 @@
 @import url("../../styles/colors.css");
 @import url("../../styles/fonts.css");
+@import url("../../styles/width.css");
+
 .footer-container {
   display: grid;
   grid-template-areas:
     "product corporative"
     "contact contact";
   width: 95%;
-  max-width: 1300px;
+  max-width: var(--max-width);
   padding-top: 50px;
   margin: 0 auto;
   padding-bottom: 120px;

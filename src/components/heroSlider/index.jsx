@@ -3,7 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "./slider.css";
 import "swiper/css/effect-fade";
-import { HERO_IMAGES } from "../../utils/constants";
+import { HERO_IMAGES } from "../../utils/constants/images-faqs";
 
 export function HeroSlider() {
   return (

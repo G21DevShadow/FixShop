@@ -29,4 +29,6 @@
   font-size: 14px;
   text-align: left;
   overflow-y: scroll;
+  scrollbar-color: #8da2c0 #eff3f8;
+  scrollbar-width: thin;
 }

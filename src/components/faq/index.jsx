@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./faq.css";
 
-import { FAQS } from "../../utils/constants";
+import { FAQS } from "../../utils/constants/images-faqs";
 
 export const FaqAccordion = ({ title }) => {
   const [activeIndex, setActiveIndex] = useState(null);

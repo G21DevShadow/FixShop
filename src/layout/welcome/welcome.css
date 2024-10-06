@@ -1,13 +1,14 @@
 @import url("../../styles/colors.css");
 @import url("../../styles/fonts.css");
+@import url("../../styles/width.css");
 .welcome {
   display: grid;
-  gap: 2rem;
+  gap: 3.6rem;
+  grid-template-rows: minmax(462px, 465px) minmax(379px, 380px);
   width: 90%;
-  max-width: 1300px;
-  min-height: 100vh;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .welcome-info {
@@ -55,7 +56,8 @@
     justify-content: center;
     align-content: center;
     gap: 1rem;
-    padding: 0;
+    padding: 6rem 0;
+    min-height: 100vh;
   }
   .welcome-info {
     align-self: center;

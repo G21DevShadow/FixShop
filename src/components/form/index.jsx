@@ -1,7 +1,7 @@
 import "./form.css";
 import { useState } from "react";
 import { useValidateLength } from "../../hooks/all/countWords";
-import { EMOTION_ICONS } from "../../utils/constants";
+import { EMOTION_ICONS } from "../../utils/constants/images-faqs";
 
 export function Form() {
   const { text, textExceeded, checkText } = useValidateLength();

@@ -29,7 +29,7 @@ export function CommentSlider() {
       >
         <SwiperSlide>
           <CommentCard
-            UrlFace={"./src/assets/icons/faceIcon/faceHappy.svg"}
+            UrlFace={"./assets/icons/faceIcon/FaceHappy.svg"}
             userName={"John Doe"}
             commentText={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus est, maximus nec porta ut, eleifend non massa. Aenean luctus dui vitae sapien gravida congue. Sed sed sapien et orci.."
@@ -38,7 +38,7 @@ export function CommentSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <CommentCard
-            UrlFace={"./src/assets/icons/faceIcon/faceHappy.svg"}
+            UrlFace={"./assets/icons/faceIcon/FaceHappy.svg"}
             userName={"John Doe"}
             commentText={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus est, maximus nec porta ut, eleifend non massa. Aenean luctus dui vitae sapien gravida congue. Sed sed sapien et orci."
@@ -47,7 +47,7 @@ export function CommentSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <CommentCard
-            UrlFace={"./src/assets/icons/faceIcon/faceHappy.svg"}
+            UrlFace={"./assets/icons/faceIcon/FaceHappy.svg"}
             userName={"John Doe"}
             commentText={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus est, maximus nec porta ut, eleifend non massa. Aenean luctus dui vitae sapien gravida congue. Sed sed sapien et orci."
@@ -56,7 +56,7 @@ export function CommentSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <CommentCard
-            UrlFace={"./src/assets/icons/faceIcon/faceHappy.svg"}
+            UrlFace={"./assets/icons/faceIcon/FaceHappy.svg"}
             userName={"John Doe"}
             commentText={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus est, maximus nec porta ut, eleifend non massa. Aenean luctus dui vitae sapien gravida congue. Sed sed sapien et orci."
@@ -65,7 +65,7 @@ export function CommentSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <CommentCard
-            UrlFace={"./src/assets/icons/faceIcon/faceHappy.svg"}
+            UrlFace={"./assets/icons/faceIcon/FaceHappy.svg"}
             userName={"John Doe"}
             commentText={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus est, maximus nec porta ut, eleifend non massa. Aenean luctus dui vitae sapien gravida congue. Sed sed sapien et orci."

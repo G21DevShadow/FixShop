@@ -4,7 +4,7 @@
 .faq-container {
   display: grid;
   justify-items: center;
-  gap: 2rem;
+  gap: 4rem;
   max-width: 680px;
   padding: 20px;
   margin: 0 auto;

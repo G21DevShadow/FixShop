@@ -1,1 +1,1 @@
-export const RELATIVE_IMG = "./src/assets/";
+export const RELATIVE_IMG = "./assets/";
